@@ -1,0 +1,28 @@
+{
+  "name": "project-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegovieiradv/project-node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/diegovieiradv/project-node.js/issues"
+  },
+  "homepage": "https://github.com/diegovieiradv/project-node.js#readme",
+  "dependencies": {
+    "@prisma/client": "^6.12.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.12.0"
+  }
+}
