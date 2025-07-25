@@ -117,7 +117,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\project-node.js\\generated\\prisma",
+      "value": "/home/diego/Documentos/GitHub/project-node.js/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -126,12 +126,12 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "windows",
+        "value": "debian-openssl-3.0.x",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\project-node.js\\prisma\\schema.prisma",
+    "sourceFilePath": "/home/diego/Documentos/GitHub/project-node.js/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
