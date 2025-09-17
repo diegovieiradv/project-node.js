@@ -5,17 +5,21 @@ import { PrismaClient } from "./generated/prisma/index.js";
 const prisma = new PrismaClient();
 
 const app = express();
+app.use(
+  cors({
+    origin: "https://project-cadastro-de-usuarios.vercel.app/",
+  })
+);
+
 app.use(express.json());
-app.use(cors());
 
 app.get("/usuarios", async (req, res) => {
-
-    const users = await prisma.user.findMany();
+  const users = await prisma.user.findMany();
   res.status(200).json(users);
 });
 
 app.post("/usuarios", async (req, res) => {
- const users = await prisma.user.create({
+  const users = await prisma.user.create({
     data: {
       email: req.body.email,
       age: req.body.age,
@@ -27,10 +31,9 @@ app.post("/usuarios", async (req, res) => {
 });
 
 app.put("/usuarios/:id", async (req, res) => {
-   
- const users = await prisma.user.update({
-     where: {
-        id: req.params.id
+  const users = await prisma.user.update({
+    where: {
+      id: req.params.id,
     },
     data: {
       email: req.body.email,
@@ -43,10 +46,9 @@ app.put("/usuarios/:id", async (req, res) => {
 });
 
 app.delete("/usuarios/:id", async (req, res) => {
-   
- const users = await prisma.user.delete({
-     where: {
-        id: req.params.id
+  const users = await prisma.user.delete({
+    where: {
+      id: req.params.id,
     },
   });
 
